@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>30</y>
+      <w>300</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model::Card
+--
+-backImage : UIImage
+-isFaceUP : Bool
+--
++ getBackImage() : UIImage
++ getFacing() : Bool 
++ init () : Iintializer
++ toString() : String 
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>320</y>
+      <w>260</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model::PlayingCard
+--
+- rank : Int
+- suit : String
+- color : UIColor
+--
++ getRank() : Int
++ getSuit() :String
++ getColor() : UIColor
++ init() : Initializer
++ toString() : String
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>30</y>
+      <w>290</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Package::ClassName
+--
+Data Mmebers
+Should be private(-)
+--
+methods and initconstructor
+public/private as needed(+/-)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>160</y>
+      <w>410</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;330.0;390.0;330.0</additional_attributes>
+  </element>
+</diagram>
