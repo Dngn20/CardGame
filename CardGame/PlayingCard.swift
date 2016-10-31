@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Playing : Card
+class PlayingCard : Card
 {
     //private var rank : Int
     private var suit : String
