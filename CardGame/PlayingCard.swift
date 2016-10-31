@@ -10,8 +10,8 @@ import UIKit
 
 class PlayingCard : Card
 {
-    //private var rank : Int
-    private var suit : String
+    //internal var rank : Int
+    internal var suit : String
     {
         get
         {
@@ -24,7 +24,7 @@ class PlayingCard : Card
     }
     
         
-    private var color : UIColor
+    internal var color : UIColor
     {
         get
         {
@@ -36,7 +36,7 @@ class PlayingCard : Card
         }
     }
     
-    private var rank : Int
+    internal var rank : Int
     {
         get
         {
