@@ -38,7 +38,7 @@ bg=magenta</panel_attributes>
 + getRank() : Int
 + getSuit() :String
 + getColor() : UIColor
-+ init() : Initializer
++ init() : Initializerinit(withRank:Int, ofSuit:String)
 + toString() : String
 bg=green</panel_attributes>
     <additional_attributes/>

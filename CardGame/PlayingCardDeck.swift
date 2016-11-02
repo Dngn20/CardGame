@@ -10,8 +10,6 @@ import Foundation
 
 class PlayingCardDeck : Deck
 {
-    internal lazy var cards = [PlayingCard]()
-    
     override init()
     {
         super.init()
@@ -26,15 +24,9 @@ class PlayingCardDeck : Deck
                 let tempCard = PlayingCard(withRank: rank , ofSuit: suit)
                 cards.append(tempCard)
             }
-            
         }
     }
     
-    func shuffleDeck() -> Void
-    {
-    
-    }
-
     func orderDeck() -> Void
     {
         

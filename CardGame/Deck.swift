@@ -10,8 +10,17 @@ import Foundation
 
 class Deck
 {
-    init()
+    internal lazy var cards = [Card]()
+    
+    func shffleDeck() -> Void
     {
         
     }
+
+    func cutDeck() -> Void
+    {
+        
+    }
+
+
 }
