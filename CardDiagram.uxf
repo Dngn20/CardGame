@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1220</x>
-      <y>10</y>
+      <x>1200</x>
+      <y>100</y>
       <w>300</w>
       <h>150</h>
     </coordinates>
@@ -24,8 +24,8 @@ bg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1210</x>
-      <y>310</y>
+      <x>1190</x>
+      <y>400</y>
       <w>320</w>
       <h>200</h>
     </coordinates>
@@ -38,6 +38,7 @@ bg=magenta</panel_attributes>
 + getRank() : Int
 + getSuit() :String
 + getColor() : UIColor
++ init() : initializer
 + init() : Initializerinit(withRank:Int, ofSuit:String)
 + toString() : String
 bg=green</panel_attributes>
@@ -46,8 +47,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>20</y>
+      <x>30</x>
+      <y>110</y>
       <w>290</w>
       <h>110</h>
     </coordinates>
@@ -64,8 +65,8 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1360</x>
-      <y>150</y>
+      <x>1340</x>
+      <y>240</y>
       <w>30</w>
       <h>180</h>
     </coordinates>
@@ -75,8 +76,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
-      <y>10</y>
+      <x>580</x>
+      <y>100</y>
       <w>360</w>
       <h>200</h>
     </coordinates>
@@ -87,23 +88,24 @@ cards : [PlayingCard]
 init()
 shuffleDeck() ; Void
 +suffleDeck() : Void
++drawCard() : Card!
++drawRandomCard() : Card!
 bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
-      <y>310</y>
+      <x>560</x>
+      <y>400</y>
       <w>360</w>
       <h>200</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCardDeck
 --
-
+- card
 --
 +init
-
 +orderDeck() : Void
 bg=orange</panel_attributes>
     <additional_attributes/>
@@ -111,8 +113,8 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>200</y>
+      <x>750</x>
+      <y>290</y>
       <w>30</w>
       <h>130</h>
     </coordinates>
@@ -122,8 +124,8 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>930</x>
-      <y>400</y>
+      <x>910</x>
+      <y>490</y>
       <w>310</w>
       <h>40</h>
     </coordinates>
@@ -135,8 +137,8 @@ m2=52</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>950</x>
-      <y>90</y>
+      <x>930</x>
+      <y>180</y>
       <w>290</w>
       <h>40</h>
     </coordinates>
