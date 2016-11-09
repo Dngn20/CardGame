@@ -17,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRr-jd-84l">
+                                <rect key="frame" x="227" y="70" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czv-37-wrR">
                                 <rect key="frame" x="182" y="138" width="236" height="323"/>
                                 <state key="normal" title="Words" backgroundImage="CardBack"/>
@@ -24,63 +30,15 @@
                                     <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etc-Vv-IvM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRr-jd-84l">
-                                <rect key="frame" x="227" y="70" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIQ-P0-aIx">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Czv-37-wrR" firstAttribute="leading" secondItem="gIQ-P0-aIx" secondAttribute="trailing" constant="-61" id="G52-0Q-qBr"/>
-                            <constraint firstItem="gIQ-P0-aIx" firstAttribute="leading" secondItem="Czv-37-wrR" secondAttribute="leading" id="MJE-M5-HuB">
-                                <variation key="heightClass=regular" constant="19"/>
-                            </constraint>
                             <constraint firstItem="Czv-37-wrR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="So9-dZ-YdM"/>
-                            <constraint firstItem="gIQ-P0-aIx" firstAttribute="width" secondItem="Czv-37-wrR" secondAttribute="width" id="T1h-c2-y0Q">
-                                <variation key="heightClass=regular" constant="-194"/>
-                            </constraint>
-                            <constraint firstItem="Czv-37-wrR" firstAttribute="top" secondItem="gIQ-P0-aIx" secondAttribute="bottom" constant="58" id="XSF-pb-sIa"/>
-                            <constraint firstItem="gIQ-P0-aIx" firstAttribute="centerX" secondItem="Czv-37-wrR" secondAttribute="centerX" id="ePJ-p0-pQ4">
-                                <variation key="heightClass=regular" constant="-78"/>
-                            </constraint>
                             <constraint firstItem="Czv-37-wrR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iSa-Qx-FcN"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="gIQ-P0-aIx"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="MJE-M5-HuB"/>
-                                <exclude reference="T1h-c2-y0Q"/>
-                                <exclude reference="ePJ-p0-pQ4"/>
-                                <exclude reference="G52-0Q-qBr"/>
-                                <exclude reference="XSF-pb-sIa"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="gIQ-P0-aIx"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="MJE-M5-HuB"/>
-                                <include reference="T1h-c2-y0Q"/>
-                                <include reference="ePJ-p0-pQ4"/>
-                                <include reference="G52-0Q-qBr"/>
-                                <include reference="XSF-pb-sIa"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="CardButton" destination="Czv-37-wrR" id="QIw-eW-UM8"/>
-                        <outlet property="CardLabel" destination="gIQ-P0-aIx" id="zpd-7E-eMv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
