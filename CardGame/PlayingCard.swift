@@ -36,6 +36,11 @@ class PlayingCard : Card
     func getSuit() -> String{return suit}
     func getcolor() -> UIColor{return color}
     
+    func getCardData() -> String
+    {
+        return "\(PlayingCard.validRanks()[rank]) \(suit)"
+    }
+    
     override func toString() -> String
     {
         let backStatus : String

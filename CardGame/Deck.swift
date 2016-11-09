@@ -12,7 +12,7 @@ class Deck
 {
     internal lazy var cards = [Card]()
     
-    func shffleDeck() -> Void
+    func shuffleDeck() -> Void
     {
         //Created a temp variable to hold Cards.
         var tempDeck = [Card]()
@@ -20,7 +20,7 @@ class Deck
         //Repeat until cards data members is empty
         while self.cards.count > 0
         {
-            //get a rendom number betwwen 0...cards.count -1
+            //get a random number betwwen 0...cards.count -1
             let randomIndex = Int (arc4random() % (UInt32)(cards.count))
             
             //Remove the card at that index from the deck.
@@ -41,18 +41,20 @@ class Deck
 
     func drawCard() -> Card!
     {
+       return nil
+    }
+    
+    
+    func drawRandomCard() -> Card!
+    {
         if cards.count > 0
         {
-            return cards.removeAtIndex(0)
+            let randomIndex = Int (arc4random() % (UInt32)(cards.count))
+            return cards.removeAtIndex(randomIndex)
         }
         else
         {
             return nil
         }
-    }
-    
-    func drawRandomCard() -> Card!
-    {
-        return nil
     }
 }

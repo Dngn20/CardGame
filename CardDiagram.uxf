@@ -25,8 +25,8 @@ bg=magenta</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1190</x>
-      <y>400</y>
-      <w>320</w>
+      <y>410</y>
+      <w>350</w>
       <h>200</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCard
@@ -41,6 +41,7 @@ bg=magenta</panel_attributes>
 + init() : initializer
 + init() : Initializerinit(withRank:Int, ofSuit:String)
 + toString() : String
++ getCardData() :String
 bg=green</panel_attributes>
     <additional_attributes/>
   </element>
@@ -68,10 +69,10 @@ bg=blue</panel_attributes>
       <x>1340</x>
       <y>240</y>
       <w>30</w>
-      <h>180</h>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
