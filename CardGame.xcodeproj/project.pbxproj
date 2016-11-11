@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1F096F1DD65718004BEEE4 /* StupidGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F096E1DD65718004BEEE4 /* StupidGame.swift */; };
 		9C1F9F201DBFE3F10053B5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F9F1F1DBFE3F10053B5C5 /* AppDelegate.swift */; };
 		9C1F9F251DBFE3F10053B5C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F9F231DBFE3F10053B5C5 /* Main.storyboard */; };
 		9C1F9F271DBFE3F10053B5C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F9F261DBFE3F10053B5C5 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C1F096E1DD65718004BEEE4 /* StupidGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StupidGame.swift; path = Model/StupidGame.swift; sourceTree = "<group>"; };
 		9C1F9F1C1DBFE3F10053B5C5 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1F9F1F1DBFE3F10053B5C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1F9F241DBFE3F10053B5C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				9C1FFA991DC7C45100AA51AE /* Deck.swift */,
 				9C1FFA9F1DC7C4F800AA51AE /* PlayingCardDeck.swift */,
 				9C1FFAA11DC7C58200AA51AE /* Card.swift */,
+				9C1F096E1DD65718004BEEE4 /* StupidGame.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				9C1FFAA21DC7C58200AA51AE /* Card.swift in Sources */,
 				9C1FFA9A1DC7C45100AA51AE /* Deck.swift in Sources */,
 				9C1FFAA01DC7C4F800AA51AE /* PlayingCardDeck.swift in Sources */,
+				9C1F096F1DD65718004BEEE4 /* StupidGame.swift in Sources */,
 				9C1F9F201DBFE3F10053B5C5 /* AppDelegate.swift in Sources */,
 				9C3F4AED1DC27DEA00B2098C /* CardGameConrtoller.swift in Sources */,
 			);

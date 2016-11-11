@@ -13,7 +13,7 @@ class CardGameController : UIViewController
     private lazy var clickCount = Int()
     private lazy var cardDeck = PlayingCardDeck()
     
-    @IBOutlet weak var CardLabel: UILabel!
+    @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var CardButton: UIButton!
     
     override func viewDidLoad() -> Void
@@ -29,17 +29,16 @@ class CardGameController : UIViewController
         
         let content = "You clicked \(clickCount) times"
         
-        CardLabel.text = content
-        
-        if let currentCard = cardDeck.drawCard() as? PlayingCard
+        if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
         {
-            CardButton.setTitle("(currentCard.rank) \(currentCard.getCardData() )" , forState: UIControlState.Normal)
+            CardButton.setTitle("\(currentCard.getCardData())" , forState: UIControlState.Normal)
         }
         else
         {
             CardButton.setTitle("deck over" , forState: UIControlState.Normal)
+            cardDeck = PlayingCardDeck()
         }
-        CardLabel.text = content
+        cardLabel.text = content
     }
     
 }
