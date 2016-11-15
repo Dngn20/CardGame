@@ -27,7 +27,10 @@ class StupidGame
     
     func startGame() -> Void
     {
-        CardOne = DeckOne.drawRandomCard()
+        DeckOne.shuffleDeck()
+        DeckTwo.shuffleDeck()
+        
+        
     }
 
 

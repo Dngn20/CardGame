@@ -91,6 +91,7 @@ shuffleDeck() ; Void
 +suffleDeck() : Void
 +drawCard() : Card!
 +drawRandomCard() : Card!
+
 bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
@@ -147,5 +148,25 @@ m2=52</panel_attributes>
 m1=1
 m2=n</panel_attributes>
     <additional_attributes>10.0;10.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>420</y>
+      <w>360</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model::StupidGame
+--
+DeckOne : PlayingCardDeck
+DeckTwo : PlayingCardDeck
+CardOne : PlayingCard
+CardTwo : PlayingCard
+--
+init() : Initializer
+startGame() : Void
+bg=cyan</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
