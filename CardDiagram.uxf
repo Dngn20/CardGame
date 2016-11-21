@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1200</x>
+      <x>1190</x>
       <y>100</y>
       <w>300</w>
       <h>150</h>
@@ -24,7 +24,7 @@ bg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1190</x>
+      <x>1180</x>
       <y>410</y>
       <w>350</w>
       <h>200</h>
@@ -48,8 +48,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>110</y>
+      <x>250</x>
+      <y>100</y>
       <w>290</w>
       <h>110</h>
     </coordinates>
@@ -66,7 +66,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1340</x>
+      <x>1330</x>
       <y>240</y>
       <w>30</w>
       <h>190</h>
@@ -77,20 +77,20 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
+      <x>570</x>
       <y>100</y>
       <w>360</w>
       <h>200</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Deck
 --
-cards : [PlayingCard]
+cards : [Card]
 --
 init()
 shuffleDeck() ; Void
 +suffleDeck() : Void
-+drawCard() : Card!
-+drawRandomCard() : Card!
++drawCard() : Card?
++drawRandomCard() : Card?
 
 bg=yellow</panel_attributes>
     <additional_attributes/>
@@ -98,7 +98,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
+      <x>550</x>
       <y>400</y>
       <w>360</w>
       <h>200</h>
@@ -115,7 +115,7 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>750</x>
+      <x>740</x>
       <y>290</y>
       <w>30</w>
       <h>130</h>
@@ -126,7 +126,7 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
+      <x>900</x>
       <y>490</y>
       <w>310</w>
       <h>40</h>
@@ -139,7 +139,7 @@ m2=52</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>930</x>
+      <x>920</x>
       <y>180</y>
       <w>290</w>
       <h>40</h>
@@ -152,8 +152,8 @@ m2=n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>130</x>
-      <y>420</y>
+      <x>170</x>
+      <y>240</y>
       <w>360</w>
       <h>200</h>
     </coordinates>
@@ -167,6 +167,39 @@ CardTwo : PlayingCard
 init() : Initializer
 startGame() : Void
 bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>540</y>
+      <w>320</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>CardGame.View::CardView
+--
+frontImage: UIImageView
+backImage: UIImageView
+isaceUp: Bool 
+bottomLabel : UILabel
+topLabel : UILabel
+--
+bg=pink
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>30</x>
+      <y>510</y>
+      <w>500</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>View
+--
+bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
