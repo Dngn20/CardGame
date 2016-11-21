@@ -17,6 +17,7 @@
 		9C1FFAA01DC7C4F800AA51AE /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1FFA9F1DC7C4F800AA51AE /* PlayingCardDeck.swift */; };
 		9C1FFAA21DC7C58200AA51AE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1FFAA11DC7C58200AA51AE /* Card.swift */; };
 		9C3F4AED1DC27DEA00B2098C /* CardGameConrtoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4AEC1DC27DEA00B2098C /* CardGameConrtoller.swift */; };
+		9C840FF91DE38D5400C060C2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C840FF81DE38D5400C060C2 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9C1FFA9F1DC7C4F800AA51AE /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 		9C1FFAA11DC7C58200AA51AE /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9C3F4AEC1DC27DEA00B2098C /* CardGameConrtoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameConrtoller.swift; path = Controller/CardGameConrtoller.swift; sourceTree = "<group>"; };
+		9C840FF81DE38D5400C060C2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				9C1F9F281DBFE3F10053B5C5 /* LaunchScreen.storyboard */,
 				9C1F9F261DBFE3F10053B5C5 /* Assets.xcassets */,
 				9C1F9F231DBFE3F10053B5C5 /* Main.storyboard */,
+				9C840FF81DE38D5400C060C2 /* CardView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				9C1FFAA01DC7C4F800AA51AE /* PlayingCardDeck.swift in Sources */,
 				9C1F096F1DD65718004BEEE4 /* StupidGame.swift in Sources */,
 				9C1F9F201DBFE3F10053B5C5 /* AppDelegate.swift in Sources */,
+				9C840FF91DE38D5400C060C2 /* CardView.swift in Sources */,
 				9C3F4AED1DC27DEA00B2098C /* CardGameConrtoller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
