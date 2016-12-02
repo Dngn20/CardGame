@@ -26,7 +26,7 @@ class Deck
             //Remove the card at that index from the deck.
             let removedCard = cards.removeAtIndex(randomIndex)
             
-            //Place the data member with the upda;ed data
+            //Place the data member with the updated data
             tempDeck.append(removedCard)
         }
         

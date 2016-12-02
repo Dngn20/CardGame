@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -26,6 +27,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czv-37-wrR">
                                 <rect key="frame" x="182" y="138" width="236" height="323"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="FeP-I5-Ph1"/>
+                                    <constraint firstAttribute="width" secondItem="Czv-37-wrR" secondAttribute="height" multiplier="236:323" id="Oex-eE-OYp"/>
+                                    <constraint firstAttribute="height" constant="323" id="b2J-S4-TpY"/>
+                                </constraints>
                                 <state key="normal" title="Words" backgroundImage="CardBack"/>
                                 <connections>
                                     <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etc-Vv-IvM"/>
